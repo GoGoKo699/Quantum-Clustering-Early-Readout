@@ -158,7 +158,7 @@ P_{\mathrm{final}}
 \tag{13}
 ```
 
-For $`a\le7/12`$, the optimum final value $`5/12`$ is attainable. This prior result is the physical small-system example of the exact plateau; it is not an additional result claimed here.
+For $`1/2\le a\le7/12`$, the optimum final value $`5/12`$ is attainable. This prior result is the physical small-system example of the exact plateau; it is not an additional result claimed here.
 
 Put $`x=a-7/12\ge0`$ and $`\eta=5/12-P_{\mathrm{final}}`$. The boundary gives
 
