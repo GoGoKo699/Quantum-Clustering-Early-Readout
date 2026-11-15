@@ -29,7 +29,7 @@ Every prefix source state is invariant under this rotation, so $`E_y`$ and $`\ov
 
 Here $`V_{r,i}\cong S^{(r-i,i)}`$ is the Specht multiplicity space and $`Q_{r,i}`$ the corresponding $`U(d)`$ representation. Thus the observable part of every early effect is central under prefix permutations. It may distinguish Schur sectors, but cannot distinguish two orderings with the same cluster cardinalities.
 
-For $`d=2`$, these are all prefix Schur sectors. For $`d>2`$, sectors with three or more rows never occur in the binary pure-template ensemble. The theorem places no restriction on effects there.
+For $`d=2`$, these are all prefix Schur sectors. For $`d\gt 2`$, sectors with three or more rows never occur in the binary pure-template ensemble. The theorem places no restriction on effects there.
 
 ## From an arbitrary instrument to the optimal supports
 
@@ -46,7 +46,7 @@ where $`\{G_A\}`$ is the resulting final clustering POVM. Since final success is
 For a label of minority size $`k`$, the only source-supported dual kernel is
 
 ```math
-Q_{n,k}\otimes\operatorname{span}\{v_A\}.
+Q_{n,k}\otimes\mathrm{span}\{v_A\}.
 ```
 
 Positivity gives $`0\le B_{y,A}\le G_A`$, so the same support restriction holds for every joint refinement. Averaging the joint POVM under $`U(d)`$ preserves its marginals and all ensemble probabilities. Its compression to a source-supported sector has the form
@@ -67,7 +67,7 @@ Use the subset realization $`H_k(n)=\ker D_n`$ from [Harmonic frames](harmonic_f
 
 ```math
 N=n-1,
-\qquad a=n-2k+1>0,
+\qquad a=n-2k+1\gt 0,
 \qquad H_k(n)=T\oplus B,
 \qquad T=H_k(N).
 ```
@@ -90,7 +90,7 @@ and these are precisely the two multiplicity-free $`S_N`$ branches.
 **Lemma.** Let
 
 ```math
-W=P_{n,k}\operatorname{diag}(z_A)P_{n,k}.
+W=P_{n,k}\mathrm{diag}(z_A)P_{n,k}.
 ```
 
 If $`WP_B=0`$, then a scalar $`c`$ exists with
@@ -183,7 +183,7 @@ It does not depend on the ordering $`A`$. The right-hand side may depend on $`j`
 
 Suppose the instrument acts on $`m\le n-2`$ specimens. Append identities to its effect to regard it as an $`N=n-1`$ prefix effect. The theorem says that its outcome probability depends only on the full prefix's minority count; call it $`p_j(y)`$.
 
-At least one position in that prefix is unmeasured. For any $`j<\lfloor N/2\rfloor`$, choose a binary word with $`j`$ ones whose unmeasured position is zero, then change just that position to one. The reduced state of the measured specimens is unchanged, because the two unknown templates retain their same independent Haar prior. The full prefix minority count changes from $`j`$ to $`j+1`$. Therefore
+At least one position in that prefix is unmeasured. For any $`j\lt \lfloor N/2\rfloor`$, choose a binary word with $`j`$ ones whose unmeasured position is zero, then change just that position to one. The reduced state of the measured specimens is unchanged, because the two unknown templates retain their same independent Haar prior. The full prefix minority count changes from $`j`$ to $`j+1`$. Therefore
 
 ```math
 p_j(y)=p_{j+1}(y).

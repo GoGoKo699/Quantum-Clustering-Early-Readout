@@ -30,7 +30,7 @@ Watrous uses column vectors and adjoints rather than Dirac notation. The reposit
 | $`u`$ and $`uu^*`$ | $`|u\rangle`$ and $`|u\rangle\langle u|`$. The latter has trace $`\|u\|^2`$, which need not be one for a frame vector. |
 | $`\mathrm D(\mathcal X)`$ | Density operators on a specimen space $`\mathcal X=\mathbb C^d`$ or an array $`(\mathbb C^d)^{\otimes n}`$. |
 | Ensemble $`\eta(a)`$ | The prior-weighted operator $`p_n\rho_{n;[x]}`$, not just the normalized state $`\rho_{n;[x]}`$. |
-| Measurement $`\mu(a)\ge0`$, $`\sum_a\mu(a)=I`$ | Final effects $`M_{[x]}`$ or early effects $`F_y`$. Outcome probabilities are $`\operatorname{tr}(F_y\rho)`$. |
+| Measurement $`\mu(a)\ge0`$, $`\sum_a\mu(a)=I`$ | Final effects $`M_{[x]}`$ or early effects $`F_y`$. Outcome probabilities are $`\mathrm{tr}(F_y\rho)`$. |
 | Instrument branch $`\Phi_y`$ | A completely positive map with effect $`F_y=\Phi_y^*(I)`$. The effect fixes classical probabilities; the map also fixes the retained quantum state. |
 | Dual discrimination operator $`Y`$ | The explicit certificate $`\Gamma_n`$ in [optimal measurement](../science/optimal_measurement.md). It is not an early POVM effect. |
 | Symmetric projection | $`P_{\mathrm{sym},A}`$ on positions in $`A`$. Its rank is $`s_d(|A|)=\binom{d+|A|-1}{|A|}`$. |
@@ -65,7 +65,7 @@ Q_{n,k}^{(d)}\otimes V_{n,k},
 \qquad V_{n,k}\cong S^{(n-k,k)}.
 ```
 
-Here $`Q`$ carries the common-unitary action and $`V`$ the position-permutation action. This specific decomposition, its spherical lines and its one-box branching are additional ingredients; the reading list does not substitute for their project proofs. For $`d>2`$, higher-row physical sectors are absent from this source ensemble. Statements restricted to $`\mathcal S_n`$ do not determine an instrument's action on those unused sectors.
+Here $`Q`$ carries the common-unitary action and $`V`$ the position-permutation action. This specific decomposition, its spherical lines and its one-box branching are additional ingredients; the reading list does not substitute for their project proofs. For $`d\gt 2`$, higher-row physical sectors are absent from this source ensemble. Statements restricted to $`\mathcal S_n`$ do not determine an instrument's action on those unused sectors.
 
 ## From discrimination duality to an exact timing constraint
 
@@ -75,9 +75,9 @@ Apply the ensemble-discrimination SDP to the prior-weighted states:
 \begin{aligned}
 P_{\mathrm{opt},d}(n)
 &=\max_{\substack{M_{[x]}\succeq0\\\sum_{[x]}M_{[x]}=I}}
-\sum_{[x]}\operatorname{tr}\!\left(M_{[x]}p_n\rho_{n;[x]}\right),\\
+\sum_{[x]}\mathrm{tr}\!\left(M_{[x]}p_n\rho_{n;[x]}\right),\\
 &=\min_{\Gamma\succeq p_n\rho_{n;[x]}\ \forall[x]}
-\operatorname{tr}\Gamma .
+\mathrm{tr}\Gamma .
 \end{aligned}
 ```
 
@@ -94,7 +94,7 @@ The tensor identity expresses the early operation's lack of access to future arr
 
 ```math
 0=\sum_{y,[x]}
-\operatorname{tr}\!\left[
+\mathrm{tr}\!\left[
 (\Gamma_n-p_n\rho_{n;[x]})B_{y,[x]}
 \right].
 ```

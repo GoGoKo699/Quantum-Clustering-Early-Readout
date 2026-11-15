@@ -28,7 +28,7 @@ select the symmetric and antisymmetric subspaces, of dimensions three and one. A
 
 Both have trace one. These matrices describe uncertainty about the preparation under each hypothesis; they are not extra specimens supplied to the apparatus. This is the state-ensemble step of M01–M04 and [model §2](../science/model.md#2-averaged-hypotheses-and-the-balanced-factor).
 
-A POVM is a family of positive operators that sum to identity. Its effect $`K_a`$ gives outcome probability $`\Pr(a\mid H)=\operatorname{tr}(K_a\rho_H)`$. Consider
+A POVM is a family of positive operators that sum to identity. Its effect $`K_a`$ gives outcome probability $`\Pr(a\mid H)=\mathrm{tr}(K_a\rho_H)`$. Consider
 
 ```math
 K_0=\frac23P_+,
@@ -81,13 +81,13 @@ M_0=P_{123},
 M_i=\frac23(R_i-P_{123})\quad(i=1,2,3).
 ```
 
-The subtraction defines a positive projector before its factor $`2/3`$: the fully symmetric space is contained in each pair-symmetric space. The identities $`\operatorname{tr}P_{123}=4`$, $`\operatorname{tr}R_i=6`$ and
+The subtraction defines a positive projector before its factor $`2/3`$: the fully symmetric space is contained in each pair-symmetric space. The identities $`\mathrm{tr}P_{123}=4`$, $`\mathrm{tr}R_i=6`$ and
 
 ```math
 R_1+R_2+R_3=\frac32I_8+\frac32P_{123}
 ```
 
-show that the source states are normalized and that $`\sum_{i=0}^3M_i=I_8`$. The four effects form a valid measurement. Its correctness probabilities are $`\operatorname{tr}(M_0\rho_0)=1`$ and $`\operatorname{tr}(M_i\rho_i)=2/9`$ for each singleton. Consequently
+show that the source states are normalized and that $`\sum_{i=0}^3M_i=I_8`$. The four effects form a valid measurement. Its correctness probabilities are $`\mathrm{tr}(M_0\rho_0)=1`$ and $`\mathrm{tr}(M_i\rho_i)=2/9`$ for each singleton. Consequently
 
 ```math
 P_{\mathrm{final}}
@@ -147,7 +147,7 @@ s_d(t)=\binom{d+t-1}{t},
 
 Here $`s_d(t)`$ is the dimension of the symmetric subspace of $`t`$ qudits; $`s_d(0)=1`$. The projectors act on disjoint groups, so their product has exactly the denominator as its trace. The two-qubit states above are the first instance of this formula. When $`n=2j`$, $`A`$ and $`A^c`$ denote the same answer: retain one representative. This halves the number of hypotheses at that count, without changing a source state's normalization or its prior. The [Watrous bridge](WATROUS_BRIDGE.md#from-unknown-prototypes-to-a-known-ensemble) explains the Haar moment behind the formula.
 
-After $`m<n`$ arrivals, an unrestricted instrument may release $`a`$, keep a quantum output and ancillas, and later use a conditional decoder. Its joint effects satisfy
+After $`m\lt n`$ arrivals, an unrestricted instrument may release $`a`$, keep a quantum output and ancillas, and later use a conditional decoder. Its joint effects satisfy
 
 ```math
 B_{a,[x]}\succeq0,
@@ -173,7 +173,7 @@ Q_{n,k}^{(d)}\otimes V_{n,k},
 V_{n,k}\cong S^{(n-k,k)}.
 ```
 
-The $`Q`$ factor carries common basis rotations; the $`V`$ factor carries permutations of positions. Only two-row sectors occur because the source contains a product of two symmetric groups of specimens. For qubits they fill the Hilbert space. For $`d>2`$, higher-row sectors are source-null, and physical POVMs can be completed there without changing source probabilities. This is the reduction of M09–M10, detailed in [model §3](../science/model.md#3-the-occupied-schur-sectors).
+The $`Q`$ factor carries common basis rotations; the $`V`$ factor carries permutations of positions. Only two-row sectors occur because the source contains a product of two symmetric groups of specimens. For qubits they fill the Hilbert space. For $`d\gt 2`$, higher-row sectors are source-null, and physical POVMs can be completed there without changing source probabilities. This is the reduction of M09–M10, detailed in [model §3](../science/model.md#3-the-occupied-schur-sectors).
 
 The discrimination dual supplies an operator $`\Gamma_n\succeq p_n\rho_{n;[x]}`$ for every answer. Its trace bounds the success of every final POVM. Here the explicit certificate is
 
@@ -190,7 +190,7 @@ For any exactly optimal sequential procedure, the gap is
 
 ```math
 0=P_{\mathrm{opt},d}(n)-P_{\mathrm{final}}
-=\sum_{a,[x]}\operatorname{tr}
+=\sum_{a,[x]}\mathrm{tr}
 \left[(\Gamma_n-p_n\rho_{n;[x]})B_{a,[x]}\right].
 ```
 
@@ -210,7 +210,7 @@ v_A=P_{H_k(n)}e_A.
 
 The harmonic space $`H_k(n)`$ realizes $`V_{n,k}`$; $`v_A`$ is the projected subset vector. These vectors are generally not orthogonal. Their rank-one operators nevertheless resolve identity, and their normalized directions are the minimal-sector spherical lines in the slack kernels. The vectors' squared norms are $`f_{n,k}/\binom nk`$, where $`f_{n,k}=\binom nk-\binom n{k-1}`$. This supplies the concrete objects in M11.
 
-Two facts about these frames carry M14–M17. First, the projectors $`|v_A\rangle\langle v_A|`$ are linearly independent when $`n>2k`$. A constructive proof uses harmonic polynomials made from disjoint pair differences. Two such polynomials can share exactly one subset monomial, so a matrix element isolates its coefficient in a proposed operator relation. At balance, a cycle replaces that path witness: its shared monomials are $`A`$ and $`A^c`$. Since $`v_{A^c}=(-1)^kv_A`$, one projector per complementary pair is independent. The corresponding optimal balanced POVM requires a factor of two. The complete witnesses and normalization appear in [harmonic frames](../science/harmonic_frames.md).
+Two facts about these frames carry M14–M17. First, the projectors $`|v_A\rangle\langle v_A|`$ are linearly independent when $`n\gt 2k`$. A constructive proof uses harmonic polynomials made from disjoint pair differences. Two such polynomials can share exactly one subset monomial, so a matrix element isolates its coefficient in a proposed operator relation. At balance, a cycle replaces that path witness: its shared monomials are $`A`$ and $`A^c`$. Since $`v_{A^c}=(-1)^kv_A`$, one projector per complementary pair is independent. The corresponding optimal balanced POVM requires a factor of two. The complete witnesses and normalization appear in [harmonic frames](../science/harmonic_frames.md).
 
 Second, restricting a final sector to the first $`m=n-1`$ positions gives neighboring prefix branches:
 
@@ -269,7 +269,7 @@ B_0=1,
 \qquad B_j=\prod_{t=1}^j(n-2t+2),
 \qquad
 w_l=\begin{cases}
-B_l^{-1}-B_{l+1}^{-1},&l<r,\\
+B_l^{-1}-B_{l+1}^{-1},&l\lt r,\\
 B_r^{-1},&l=r.
 \end{cases}
 ```
@@ -339,7 +339,7 @@ The free record gains a logarithmic factor over blind prefix guessing, while exa
 
 ## Exact timing, finite-size stability and resources
 
-Exact complementary slackness does not by itself establish a useful theorem for approximately optimal procedures. With final deficit $`\eta=P_{\mathrm{opt},d}(n)-P_{\mathrm{final}}>0`$, a positive relative dual gap bounds weighted leakage outside the optimal supports. A square-root trace-norm estimate then bounds the error from pinching back to those supports. This is the quantitative remnant of the equality argument, developed in M27 and [stability §1](../science/stability.md#1-weighted-leakage-from-the-optimal-supports).
+Exact complementary slackness does not by itself establish a useful theorem for approximately optimal procedures. With final deficit $`\eta=P_{\mathrm{opt},d}(n)-P_{\mathrm{final}}\gt 0`$, a positive relative dual gap bounds weighted leakage outside the optimal supports. A square-root trace-norm estimate then bounds the error from pinching back to those supports. This is the quantitative remnant of the equality argument, developed in M27 and [stability §1](../science/stability.md#1-weighted-leakage-from-the-optimal-supports).
 
 Converting that leakage to a restriction on positional information incurs another cost: a conditioning singular value $`\sigma_{n,d}`$ between the relevant operator spaces, along with explicit dimension and gap factors. It is positive and computable at each fixed size. No favorable uniform lower bound in $`n`$ is proved. Consequently the finite-size estimate does not show that small allowed final regret enforces the exact theorem's exponential early-recovery law. This distinction is M28 and [stability §§2–3](../science/stability.md#2-a-finite-conditioning-singular-value).
 
