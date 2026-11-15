@@ -1,0 +1,19 @@
+# Quantum Clustering Early Readout
+
+Question: Which early classical information is compatible with exact optimal eventual binary clustering of native quantum specimens?
+
+- Start: README.md and science/README.md.
+- Source, prior, occupied Schur sectors, exact whole-partition Bayes criterion: science/model.md.
+- Inherited optimum, dual equality, all optimal continuations and local Lüders construction: science/optimal_measurement.md.
+- Harmonic subset frame, spherical line, independence and balanced complement factor: science/harmonic_frames.md.
+- New branching annihilator lemma, penultimate no-order theorem and earlier no-information corollary: science/temporal_rigidity.md.
+- Necessary/sufficient reduced POVM cone and canonical Blackwell-maximal classical readout: science/free_readout.md.
+- Exact all-d prefix success, examples and fixed-d asymptotic regime: science/prefix_accuracy.md.
+- Approximate preservation, finite-size bounds and unresolved uniform regime: science/stability.md.
+- Physical interpretation: science/interpretation.md.
+- Paid specimens, retained prefix, conditional measurement, ancillas and synthesis limitations: science/resources.md.
+- Primary attribution and closest comparisons: references/RELATED_WORK.md; bibliography: references/references.bib.
+- Meaningful numerical/exact checks and recorded limits: verification/README.md.
+- Exact qubit illustration and values: figures/make_frontier.py; figures/frontier_values.json.
+
+Scope: two independent Haar-pure prototypes, uniform binary patterns modulo global class exchange, exact optimal full-partition success, ideal finite-dimensional instruments. Every unrestricted early record is covered through its ensemble likelihoods. The canonical reduced family does not assert physical-instrument uniqueness or a hierarchy of quantum outputs. No scalable approximately optimal, Hamming-risk, noisy-hardware, memory-optimal or runtime-advantage theorem is supplied.
