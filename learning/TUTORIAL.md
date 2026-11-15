@@ -1,6 +1,6 @@
 # Early quantum clustering, from a physical example to the timing theorem
 
-Three qubits arrive one at a time. Each was prepared using one of two unknown pure states, chosen independently and uniformly from the qubit pure states. Each position independently chooses either preparation with probability one half. There are no labelled examples or descriptions of the preparations: the data are the three physical specimens. The eventual answer must say which positions belong together. Exchanging the names of the two groups changes nothing.
+Three qubits arrive one at a time. Two unknown pure states are drawn independently and uniformly from the qubit pure states. Each position independently uses either preparation with probability one half. There are no labelled examples or descriptions of the preparations: the data are the three physical specimens. The eventual answer must say which positions belong together. Exchanging the names of the two groups changes nothing.
 
 After the second arrival, an apparatus can release a classical answer about the first two positions and retain their quantum state. Can that answer be informative while leaving the best possible three-position clustering success attainable? The answer is yes, with a constrained, noisy measurement. Working through it first makes the general theorem's distinction between a classical record and retained quantum data concrete.
 
