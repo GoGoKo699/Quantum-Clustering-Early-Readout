@@ -56,6 +56,10 @@ Start with the [connected scientific route](science/README.md) or the [source mo
 
 [llms.txt](llms.txt) maps scientific questions to their canonical sources.
 
+## Learn the construction
+
+The [learning route](learning/README.md) is anchored in John Watrous, *The Theory of Quantum Information* (2018). Begin with the [book-to-project bridge](learning/WATROUS_BRIDGE.md), follow the [complete two-to-three-qubit example](learning/TUTORIAL.md), and use the [30-milestone map](learning/MILESTONES.md) to connect the background to the general result. The scientific pages remain the authoritative account of the proofs and their limits.
+
 ## Reproduce the finite checks
 
 See [verification instructions](verification/README.md) for dependencies, commands, recorded results and their scope. The checks reconstruct physical small-system states and measurements, exact harmonic identities, compatible instruments and independent optimization problems. General claims rest on the written proofs; finite checks do not establish priority or certify mathematical correctness.

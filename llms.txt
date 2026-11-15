@@ -15,5 +15,9 @@ Question: Which early classical information is compatible with exact optimal eve
 - Primary attribution and closest comparisons: references/RELATED_WORK.md; bibliography: references/references.bib.
 - Meaningful numerical/exact checks and recorded limits: verification/README.md.
 - Exact qubit illustration and values: figures/make_frontier.py; figures/frontier_values.json.
+- Selected educational source and reading route: learning/README.md.
+- Watrous (2018) section pointers, notation and project-specific proof gaps: learning/WATROUS_BRIDGE.md.
+- Complete physical two-to-three-qubit worked example: learning/TUTORIAL.md.
+- Exactly 30 project milestones, with prerequisites and canonical source pointers: learning/MILESTONES.md.
 
 Scope: two independent Haar-pure prototypes, uniform binary patterns modulo global class exchange, exact optimal full-partition success, ideal finite-dimensional instruments. Every unrestricted early record is covered through its ensemble likelihoods. The canonical reduced family does not assert physical-instrument uniqueness or a hierarchy of quantum outputs. No scalable approximately optimal, Hamming-risk, noisy-hardware, memory-optimal or runtime-advantage theorem is supplied.
