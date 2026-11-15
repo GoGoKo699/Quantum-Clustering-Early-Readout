@@ -189,4 +189,3 @@ L_a C_{x\mid a}L_a=B_{a,x}.
 First apply the prefix Lüders instrument $`T\mapsto\sqrt{F_a}T\sqrt{F_a}`$, retaining the postmeasurement prefix. After the remaining systems arrive, measure $`\{C_{x\mid a}\}_x`$. Equation (16) reproduces the desired joint statistics. Conversely, any early instrument followed by a conditional final measurement induces a joint POVM with the stated marginal.
 
 When a construction has first been specified only on $`\mathcal S_n`$, extend it to a physical POVM before using (15). For the twirled scalar effects used here, $`F_a\otimes I`$ is block diagonal in the global $`U(d)`$ sectors. On source-null sectors one may allocate its positive marginal among final outcomes arbitrarily. This supplies the extension without altering any source statistic or any of the compatibility inequalities.
-

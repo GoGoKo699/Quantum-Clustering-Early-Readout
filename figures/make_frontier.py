@@ -19,7 +19,7 @@ ms=list(range(2,41));s=[offline(m) for m in ms];f=[free(m) for m in ms];b=[F(1,2
 assert all(0<z<=y<=x<=1 for x,y,z in zip(s,f,b))
 rows=[{'prefix_m':m,'standalone':str(x),'free':str(y),'blind':str(z)} for m,x,y,z in zip(ms,s,f,b)]
 (root/'frontier_values.json').write_text(json.dumps(rows,indent=2)+'\n')
-plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'svg.fonttype':'none'})
+plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'svg.fonttype':'none','svg.hashsalt':'clustering-early-readout'})
 fig,ax=plt.subplots(figsize=(10.4,4.7),layout='constrained');fig.set_facecolor('#ffffff');ax.set_facecolor('#ffffff')
 ax.semilogy(ms,[float(x) for x in s],color='#233843',lw=2.6,label='Best standalone prefix clustering')
 ax.semilogy(ms,[float(x) for x in f],color='#00646c',lw=2.7,label='Best early clustering preserving the next optimum')
@@ -28,6 +28,7 @@ ax.set_xlabel('Prefix specimens m (one further specimen will arrive)');ax.set_yl
 ax.set_title('Early accuracy under a later optimality requirement',loc='left',fontweight='bold',pad=14)
 ax.grid(axis='y',alpha=.18);ax.spines[['top','right']].set_visible(False);ax.set_xlim(2,40)
 ax.legend(loc='lower left',frameon=True,facecolor='white',edgecolor='#d6e0e2',fontsize=9)
-fig.savefig(root/'frontier.svg')
+fig.savefig(root/'frontier.svg',metadata={'Date':None})
+p=root/'frontier.svg';p.write_text('\n'.join(line.rstrip() for line in p.read_text().splitlines())+'\n')
 fig.savefig('/workspace/scratch/252c84ff995c/game/frontier_preview.png',dpi=140)
 print(json.dumps({'points':len(ms),'standalone_m2':str(s[0]),'free_m2':str(f[0]),'free_m4':str(f[2]),'inequalities_checked':True}))

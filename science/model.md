@@ -172,4 +172,3 @@ I_{Q_{m,k}^{(d)}}\otimes E_{a,k}.
 The temporal rigidity theorem proves that when $`m=n-1`$ and (8) holds, every $`E_{a,k}`$ is scalar. This makes the likelihood in (10) invariant under all reorderings of a prefix with fixed cluster sizes. When $`m\le n-2`$, the likelihood is independent of the complete partition. These are statements about any physical early record through its source probabilities; an untwirled effect can still have unobservable components.
 
 Continue with [the inherited optimum and equality conditions](optimal_measurement.md), then [the harmonic frame](harmonic_frames.md), [temporal rigidity](temporal_rigidity.md), and [the complete free-readout family](free_readout.md).
-
