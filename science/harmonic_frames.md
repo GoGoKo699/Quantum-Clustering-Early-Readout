@@ -35,7 +35,7 @@ is the two-row Specht module. At $`k=0`$, take $`H_0(n)=M_0(n)`$ and $`\binom n{
 ```math
 v_A=P_{n,k}e_A,
 \qquad
-\|v_A\|^2=\frac{f_{n,k}}{\binom nk}>0.
+\lVert v_A\rVert ^2=\frac{f_{n,k}}{\binom nk}\gt 0.
 ```
 
 The norm follows because the diagonal entries of the permutation-invariant projector are equal and sum to its rank. The vectors form a Parseval frame:
@@ -57,7 +57,7 @@ where all $`2k`$ vertices are distinct. Lowering differentiates each pair with t
 Fix a cluster pattern whose minority set is $`A`$, with $`|A|=k`$. Its stabilizer is the Young subgroup $`S_A\times S_{A^c}`$. The permutation module
 
 ```math
-M_k(n)=\operatorname{Ind}_{S_k\times S_{n-k}}^{S_n}\mathbf 1
+M_k(n)=\mathrm{Ind}_{S_k\times S_{n-k}}^{S_n}\mathbf 1
 =\bigoplus_{i=0}^k S^{(n-i,i)}
 ```
 
@@ -67,12 +67,12 @@ The source state for this pattern is proportional to the product of the symmetri
 
 ```math
 \Omega_{n,k,A}
-=\frac{|v_A\rangle\langle v_A|}{\|v_A\|^2}.
+=\frac{|v_A\rangle\langle v_A|}{\lVert v_A\rVert ^2}.
 ```
 
-Only this minimal sector is being identified. In a source state of minority count $`j>i`$, its spherical vector in sector $`(n-i,i)`$ depends on the source pattern and on $`j`$; it should not be replaced by a vector indexed by an $`i`$-subset without a separate argument.
+Only this minimal sector is being identified. In a source state of minority count $`j\gt i`$, its spherical vector in sector $`(n-i,i)`$ depends on the source pattern and on $`j`$; it should not be replaced by a vector indexed by an $`i`$-subset without a separate argument.
 
-For $`n>2k`$, the optimal multiplicity-space POVM effect is therefore $`|v_A\rangle\langle v_A|`$. At $`n=2k`$, the physical cluster pattern identifies $`A`$ with $`A^c`$, and the effect is $`2|v_A\rangle\langle v_A|`$ when one representative per pair is retained.
+For $`n\gt 2k`$, the optimal multiplicity-space POVM effect is therefore $`|v_A\rangle\langle v_A|`$. At $`n=2k`$, the physical cluster pattern identifies $`A`$ with $`A^c`$, and the effect is $`2|v_A\rangle\langle v_A|`$ when one representative per pair is retained.
 
 ## Independence away from balance
 
@@ -82,7 +82,7 @@ For $`n>2k`$, the optimal multiplicity-space POVM effect is therefore $`|v_A\ran
 
 ```math
 W=\sum_A z_A|v_A\rangle\langle v_A|
-=P_{n,k}\operatorname{diag}(z_A)P_{n,k}=0.
+=P_{n,k}\mathrm{diag}(z_A)P_{n,k}=0.
 ```
 
 Fix $`A=\{a_1,\ldots,a_k\}`$ and choose distinct vertices $`b_0,\ldots,b_k`$ outside $`A`$. Define
@@ -103,7 +103,7 @@ A monomial common to their supports must choose exactly one endpoint of each edg
 
 ```math
 0=\langle f,Wg\rangle
-=\langle f,\operatorname{diag}(z_A)g\rangle=z_A.
+=\langle f,\mathrm{diag}(z_A)g\rangle=z_A.
 ```
 
 The choice of $`A`$ was arbitrary. All coefficients vanish. The case $`k=0`$ consists of one nonzero operator. ∎
@@ -121,7 +121,7 @@ v_{A^c}=(-1)^k v_A,
 
 **Theorem 2.** At $`n=2k`$, choosing one representative of each unordered pair $`\{A,A^c\}`$ gives a linearly independent family of rank-one projectors.
 
-**Proof.** Write a putative relation as $`W=P\operatorname{diag}(z)P=0`$ with complement-even coefficients $`z_A=z_{A^c}`$; divide each representative coefficient equally between its two subsets. Fix a complementary pair, write $`A=\{a_1,\ldots,a_k\}`$ and $`A^c=\{b_1,\ldots,b_k\}`$, and take
+**Proof.** Write a putative relation as $`W=P\mathrm{diag}(z)P=0`$ with complement-even coefficients $`z_A=z_{A^c}`$; divide each representative coefficient equally between its two subsets. Fix a complementary pair, write $`A=\{a_1,\ldots,a_k\}`$ and $`A^c=\{b_1,\ldots,b_k\}`$, and take
 
 ```math
 f=\prod_{i=1}^k(x_{a_i}-x_{b_i}),
@@ -144,7 +144,7 @@ These theorems also show that no further identifications of orbit projectors occ
 
 Hector Spencer-Wood's thesis, *Sequential measurement in quantum learning* (University of Glasgow, 2024), Chapter 4 and Conjecture 4.A.1, investigates the same no-order question for qubits. A proposed intermediate implication there would make outside-orbit weights constant from block diagonality alone. The following example shows why the additional scalar-bottom-block hypothesis in the [temporal-rigidity proof](temporal_rigidity.md) is needed.
 
-Take $`n=5,k=2`$. In $`H_2(5)`$, let $`B`$ be the span of $`\{v_{i5}:1\le i\le4\}`$ and $`T=B^\perp`$. These are the $`S_4`$ branches of dimensions three and two. Put
+Take $`n=5,k=2`$. In $`H_2(5)`$, let $`B`$ be the span of $`\{v_{i5}:1\le i\le4\}`$ and $`T=B^\bot`$. These are the $`S_4`$ branches of dimensions three and two. Put
 
 ```math
 W=|v_{12}\rangle\langle v_{12}|

@@ -21,7 +21,7 @@ The canonical outcome count measures one sufficient classical record, not the le
 
 ## A local early instrument and a conditional final readout
 
-The canonical effects $`F_\ell`$ act on the prefix. They sum to the identity on the ensemble support. If $`d>2`$, complete them arbitrarily on the unoccupied Schur sectors, for example by assigning that orthogonal complement to one outcome. This gives a normalized POVM on the full physical space without changing any source probabilities. A realization uses its local Lüders instrument:
+The canonical effects $`F_\ell`$ act on the prefix. They sum to the identity on the ensemble support. If $`d\gt 2`$, complete them arbitrarily on the unoccupied Schur sectors, for example by assigning that orthogonal complement to one outcome. This gives a normalized POVM on the full physical space without changing any source probabilities. A realization uses its local Lüders instrument:
 
 ```math
 \mathcal I_\ell(X)=\sqrt{F_\ell}\,X\sqrt{F_\ell}.

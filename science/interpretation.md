@@ -41,7 +41,7 @@ B_0=1,\qquad B_j=\prod_{t=1}^{j}(n-2t+2),
 \qquad
 q_\ell=
 \begin{cases}
-B_\ell^{-1}-B_{\ell+1}^{-1},&0\leq\ell<r,\\
+B_\ell^{-1}-B_{\ell+1}^{-1},&0\leq\ell\lt r,\\
 B_r^{-1},&\ell=r.
 \end{cases}
 ```

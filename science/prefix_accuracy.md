@@ -6,47 +6,54 @@ The [canonical free readout](free_readout.md) maximizes every classical decision
 
 Let
 
+**Equation (1).**
+
 ```math
 m=n-1,\qquad r=\lfloor m/2\rfloor,\qquad
 p_m=2^{1-m}=2^{2-n},\qquad
 T_{m,k}=s_d(m-k)s_d(k),
-\tag{1}
 ```
 
 and use $`B_j,w_l`$ from [free readout, Eq. (5)](free_readout.md#2-a-canonical-maximal-experiment). Define
 
+**Equation (2).**
+
 ```math
 S_{d,l}=\sum_{j=0}^l q_d(m,j)B_j.
-\tag{2}
 ```
 
 **Exact early-accuracy theorem.** The largest prefix clustering success compatible with optimal final clustering is
+
+**Equation (3).**
 
 ```math
 P_{\mathrm{free},d}(n)
 =2^{2-n}\sum_{l=0}^r
 w_l\frac{S_{d,l}}{T_{m,l}}.
-\tag{3}
 ```
 
 On canonical outcome $`l`$, guess any one prefix partition of minority size $`l`$. The ordering representative is arbitrary because all such hypotheses have the same likelihood.
 
 To prove the decision rule, a candidate of minority size $`k`$ has prior-weighted likelihood
 
+**Equation (4).**
+
 ```math
 p_m w_l\frac{S_{d,\min\{k,l\}}}{T_{m,k}}.
-\tag{4}
 ```
 
-The quantity $`T_{m,k}`$ increases for $`k\le r`$, so among $`k\ge l`$ the best choice is $`k=l`$. For $`k<l`$, use the multiplicity-free dimension identity
+The quantity $`T_{m,k}`$ increases for $`k\le r`$, so among $`k\ge l`$ the best choice is $`k=l`$. For $`k\lt l`$, use the multiplicity-free dimension identity
+
+**Equation (5).**
 
 ```math
 \sum_{j=0}^{k-1}q_d(m,j)=T_{m,k-1},\qquad
 q_d(m,k)=T_{m,k}-T_{m,k-1}.
-\tag{5}
 ```
 
-Since $`B_j\le B_k`$ for $`j<k`$, one has $`S_{d,k-1}\le B_kT_{m,k-1}`$. Consequently
+Since $`B_j\le B_k`$ for $`j\lt k`$, one has $`S_{d,k-1}\le B_kT_{m,k-1}`$. Consequently
+
+**Equation (6).**
 
 ```math
 \frac{S_{d,k}}{T_{m,k}}
@@ -54,7 +61,6 @@ Since $`B_j\le B_k`$ for $`j<k`$, one has $`S_{d,k-1}\le B_kT_{m,k-1}`$. Consequ
 =\frac{q_d(m,k)}{T_{m,k}}
 \left(B_k-\frac{S_{d,k-1}}{T_{m,k-1}}\right)
 \ge0.
-\tag{6}
 ```
 
 Thus $`k=l`$ is optimal among all hypotheses. The statistical maximality of the canonical readout proves that no other exactly free instrument can do better, yielding (3).
@@ -74,20 +80,24 @@ The first three values reproduce the improved construction in Spencer-Wood's the
 
 If preserving final clustering is not required, a sharp measurement of the prefix Schur sector is the most informative central measurement. Its best exact-partition guessing score is
 
+**Equation (7).**
+
 ```math
 U_d(n)=p_m\sum_{j=0}^r\frac{q_d(m,j)}{T_{m,j}}.
-\tag{7}
 ```
 
 The ratio is explicitly
 
+**Equation (8).**
+
 ```math
 \frac{q_d(m,j)}{T_{m,j}}
 =\frac{(d-1)(n-2j)}{(n-j)(j+d-1)}.
-\tag{8}
 ```
 
 Writing $`H_t=\sum_{a=1}^t1/a`$ and $`H_0=0`$, its exact sum is
+
+**Equation (9).**
 
 ```math
 \frac{U_d(n)}{p_m}
@@ -97,32 +107,34 @@ Writing $`H_t=\sum_{a=1}^t1/a`$ and $`H_0=0`$, its exact sum is
 -\frac{n}{n+d-1}
 \left(H_n-H_{n-r-1}\right)
 \right].
-\tag{9}
 ```
 
 In particular, for qubits the two prefactors are $`(n+2)/(n+1)`$ and $`n/(n+1)`$. Replacing both by one would give an incorrect finite-size identity.
 
 The canonical free score is close to this central ceiling in an explicit additive sense:
 
+**Equation (10).**
+
 ```math
 0\le U_d(n)-P_{\mathrm{free},d}(n)
 \le p_m(d-1)\sum_{j=0}^{r-1}
 \frac1{(n-j)(j+d-1)}.
-\tag{10}
 ```
 
 For the proof, swap the sums in (3) and use $`\sum_{l\ge j}w_l=B_j^{-1}`$. The difference from (7), divided by $`p_m`$, is
 
 ```math
 \sum_{j=0}^r q_d(m,j)B_j
-\sum_{l>j}w_l\left(\frac1{T_{m,j}}-\frac1{T_{m,l}}\right).
+\sum_{l\gt j}w_l\left(\frac1{T_{m,j}}-\frac1{T_{m,l}}\right).
 ```
 
-It is nonnegative. Bound the parenthesis by $`1/T_{m,j}`$ and use $`\sum_{l>j}w_l=1/B_{j+1}`$. Since $`B_{j+1}/B_j=n-2j`$, (8) gives (10).
+It is nonnegative. Bound the parenthesis by $`1/T_{m,j}`$ and use $`\sum_{l\gt j}w_l=1/B_{j+1}`$. Since $`B_{j+1}/B_j=n-2j`$, (8) gives (10).
 
 ## 3. The fixed-dimension asymptotic
 
 Hold the native local dimension $`d\ge2`$ fixed and let $`n\to\infty`$. Equations (9) and (10) give
+
+**Equation (11).**
 
 ```math
 P_{\mathrm{free},d}(n)
@@ -131,14 +143,14 @@ P_{\mathrm{free},d}(n)
 \log n+\gamma-H_{d-2}-\log4
 +O_d\!\left(\frac{\log n}{n}\right)
 \right],
-\tag{11}
 ```
 
 where logarithms are natural and $`\gamma`$ is Euler's constant. In particular,
 
+**Equation (12).**
+
 ```math
 P_{\mathrm{free},d}(n)=\Theta_d(2^{-n}\log n).
-\tag{12}
 ```
 
 This is a fixed-$`d`$ limit. No uniform estimate in a growing local dimension is asserted.
