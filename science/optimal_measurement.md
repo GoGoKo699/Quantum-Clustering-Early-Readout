@@ -13,7 +13,7 @@ Identify the Specht space $`V_{n,k}`$ with the harmonic subspace $`H_k^n`$ of th
 ```math
 v_A=P_{H_k^n}|A\rangle,
 \qquad
-h_{n,k}=\|v_A\|^2=\frac{f_{n,k}}{\binom nk},
+h_{n,k}=\lVert v_A\rVert ^2=\frac{f_{n,k}}{\binom nk},
 \qquad
 \Omega_{n;k\mid k,A}=\frac{|v_A\rangle\langle v_A|}{h_{n,k}}.
 ```
@@ -47,7 +47,7 @@ M_{k,A}=\frac{f_{n,k}}{C_{n,k}}
 I_{Q_{n,k}^{(d)}}\otimes\Omega_{n;k\mid k,A}.
 ```
 
-Each effect is zero in other Schur sectors. Equations (2)–(4) show that the effects sum to the identity on $`\mathcal S_n`$. Extend them arbitrarily to a POVM on $`\mathcal S_n^\perp`$; that extension has no source probability.
+Each effect is zero in other Schur sectors. Equations (2)–(4) show that the effects sum to the identity on $`\mathcal S_n`$. Extend them arbitrarily to a POVM on $`\mathcal S_n^\bot`$; that extension has no source probability.
 
 The same normalization must be used for a prefix of any length $`m`$: a balanced prefix has $`C_{m,m/2}=\frac12\binom m{m/2}`$ distinct patterns and the corresponding frame POVM uses the factor two in (3).
 

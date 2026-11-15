@@ -59,19 +59,19 @@ Summing (3) against those effects gives
 Set $`\mathcal G(H)=\Gamma^{1/2}H\Gamma^{1/2}`$. For a positive operator $`B`$ and projector $`P`$ commuting with $`\Gamma`$, the Schatten Cauchy–Schwarz inequality gives
 
 ```math
-\|\mathcal G(B-PBP)\|_1
+\lVert \mathcal G(B-PBP)\rVert _1
 \le2\sqrt{
 \mathrm{tr}(\Gamma B)
 \mathrm{tr}(\Gamma(I-P)B)}.
 ```
 
-For example, apply $`\|XY\|_1\le\|X\|_2\|Y\|_2`$ to the two terms in $`C-PCP=(I-P)C+PC(I-P)`$, with $`C=\mathcal G(B)`$. A second Cauchy–Schwarz inequality over the joint outcomes, together with $`\sum_{y,x}\mathrm{tr}(\Gamma B_{y,x})=P_{\mathrm{opt},d}(n)`$, proves
+For example, apply $`\lVert XY\rVert _1\le\lVert X\rVert _2\lVert Y\rVert _2`$ to the two terms in $`C-PCP=(I-P)C+PC(I-P)`$, with $`C=\mathcal G(B)`$. A second Cauchy–Schwarz inequality over the joint outcomes, together with $`\sum_{y,x}\mathrm{tr}(\Gamma B_{y,x})=P_{\mathrm{opt},d}(n)`$, proves
 
 **Equation (6).**
 
 ```math
 \sum_{y,x}
-\|\mathcal G(B_{y,x}-P_xB_{y,x}P_x)\|_1
+\lVert \mathcal G(B_{y,x}-P_xB_{y,x}P_x)\rVert _1
 \le2\sqrt{
 \frac{P_{\mathrm{opt},d}(n)\eta}{\alpha_{n,d}}}.
 ```
@@ -111,8 +111,8 @@ Equip Hermitian operators with the Hilbert–Schmidt inner product. Write $`\wid
 ```math
 \sigma_{n,d}=
 \min_{\substack{X\in\widetilde{\mathcal A}\ominus
-\widetilde{\mathcal C}\\\|X\|_2=1}}
-\|(I-\Pi_{\widetilde{\mathcal B}})X\|_2.
+\widetilde{\mathcal C}\\\lVert X\rVert _2=1}}
+\lVert (I-\Pi_{\widetilde{\mathcal B}})X\rVert _2.
 ```
 
 If that space is zero, set $`\sigma_{n,d}=1`$. This number is strictly positive: the unit sphere is compact, and a zero would give a nonzero vector in $`\widetilde{\mathcal A}\cap\widetilde{\mathcal B}`$ orthogonal to $`\widetilde{\mathcal C}`$, contrary to (8) and the invertibility of $`\mathcal G`$.
@@ -123,13 +123,13 @@ It is a finite computable singular value. Construct orthonormal matrix-coordinat
 
 Let $`\mathcal T`$ average an early effect under prefix permutations, after the common-$`U(d)`$ twirl. On the prefix invariant algebra it is the projection onto central operators. Since $`\Gamma`$ commutes with every prefix permutation, it is also the Hilbert–Schmidt orthogonal projection from $`\widetilde{\mathcal A}`$ to $`\widetilde{\mathcal C}`$ after applying $`\mathcal G`$.
 
-Twirling the joint effects preserves the deficit and early label statistics. Their pinched marginal $`C_y=\sum_xP_xB_{y,x}P_x`$ belongs to $`\mathcal B`$. Thus (9), (6), and $`\|H\|_1\le\sqrt D\|H\|_2`$ give
+Twirling the joint effects preserves the deficit and early label statistics. Their pinched marginal $`C_y=\sum_xP_xB_{y,x}P_x`$ belongs to $`\mathcal B`$. Thus (9), (6), and $`\lVert H\rVert _1\le\sqrt D\lVert H\rVert _2`$ give
 
 **Equation (10).**
 
 ```math
-\sum_y\|\mathcal G(F_y\otimes I_d
--(\mathcal T F_y)\otimes I_d)\|_1
+\sum_y\lVert \mathcal G(F_y\otimes I_d
+-(\mathcal T F_y)\otimes I_d)\rVert _1
 \le
 \frac{2\sqrt D}{\sigma_{n,d}}
 \sqrt{\frac{P_{\mathrm{opt},d}(n)\eta}{\alpha_{n,d}}}.

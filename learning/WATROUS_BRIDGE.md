@@ -27,13 +27,13 @@ Watrous uses column vectors and adjoints rather than Dirac notation. The reposit
 
 | Book convention or concept | Repository form and interpretation |
 | --- | --- |
-| $`u`$ and $`uu^*`$ | $`|u\rangle`$ and $`|u\rangle\langle u|`$. The latter has trace $`\|u\|^2`$, which need not be one for a frame vector. |
+| $`u`$ and $`uu^*`$ | $`\lvert u\rangle`$ and $`\lvert u\rangle\langle u\rvert`$. The latter has trace $`\lVert u\rVert ^2`$, which need not be one for a frame vector. |
 | $`\mathrm D(\mathcal X)`$ | Density operators on a specimen space $`\mathcal X=\mathbb C^d`$ or an array $`(\mathbb C^d)^{\otimes n}`$. |
 | Ensemble $`\eta(a)`$ | The prior-weighted operator $`p_n\rho_{n;[x]}`$, not just the normalized state $`\rho_{n;[x]}`$. |
 | Measurement $`\mu(a)\ge0`$, $`\sum_a\mu(a)=I`$ | Final effects $`M_{[x]}`$ or early effects $`F_y`$. Outcome probabilities are $`\mathrm{tr}(F_y\rho)`$. |
 | Instrument branch $`\Phi_y`$ | A completely positive map with effect $`F_y=\Phi_y^*(I)`$. The effect fixes classical probabilities; the map also fixes the retained quantum state. |
 | Dual discrimination operator $`Y`$ | The explicit certificate $`\Gamma_n`$ in [optimal measurement](../science/optimal_measurement.md). It is not an early POVM effect. |
-| Symmetric projection | $`P_{\mathrm{sym},A}`$ on positions in $`A`$. Its rank is $`s_d(|A|)=\binom{d+|A|-1}{|A|}`$. |
+| Symmetric projection | $`P_{\mathrm{sym},A}`$ on positions in $`A`$. Its rank is $`s_d(\lvert A\rvert)=\binom{d+|A|-1}{|A|}`$. |
 | Permutation operator $`W_\pi`$ | A permutation of specimen positions. This differs from applying the same unknown-basis rotation $`U`$ to every specimen. |
 
 The label $`[x]`$ is an unordered partition: $`x`$ and its global binary complement describe the same answer. Empty classes are allowed. Independent uniform binary labels therefore give each full partition prior $`p_n=2^{1-n}`$. Count classes do **not** have equal prior: different cardinalities contain different numbers of partitions. The score is the probability of guessing the whole partition correctly, with no partial credit for correctly labelled positions.

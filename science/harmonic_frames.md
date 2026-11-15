@@ -35,7 +35,7 @@ is the two-row Specht module. At $`k=0`$, take $`H_0(n)=M_0(n)`$ and $`\binom n{
 ```math
 v_A=P_{n,k}e_A,
 \qquad
-\|v_A\|^2=\frac{f_{n,k}}{\binom nk}\gt 0.
+\lVert v_A\rVert ^2=\frac{f_{n,k}}{\binom nk}\gt 0.
 ```
 
 The norm follows because the diagonal entries of the permutation-invariant projector are equal and sum to its rank. The vectors form a Parseval frame:
@@ -67,7 +67,7 @@ The source state for this pattern is proportional to the product of the symmetri
 
 ```math
 \Omega_{n,k,A}
-=\frac{|v_A\rangle\langle v_A|}{\|v_A\|^2}.
+=\frac{|v_A\rangle\langle v_A|}{\lVert v_A\rVert ^2}.
 ```
 
 Only this minimal sector is being identified. In a source state of minority count $`j\gt i`$, its spherical vector in sector $`(n-i,i)`$ depends on the source pattern and on $`j`$; it should not be replaced by a vector indexed by an $`i`$-subset without a separate argument.
@@ -144,7 +144,7 @@ These theorems also show that no further identifications of orbit projectors occ
 
 Hector Spencer-Wood's thesis, *Sequential measurement in quantum learning* (University of Glasgow, 2024), Chapter 4 and Conjecture 4.A.1, investigates the same no-order question for qubits. A proposed intermediate implication there would make outside-orbit weights constant from block diagonality alone. The following example shows why the additional scalar-bottom-block hypothesis in the [temporal-rigidity proof](temporal_rigidity.md) is needed.
 
-Take $`n=5,k=2`$. In $`H_2(5)`$, let $`B`$ be the span of $`\{v_{i5}:1\le i\le4\}`$ and $`T=B^\perp`$. These are the $`S_4`$ branches of dimensions three and two. Put
+Take $`n=5,k=2`$. In $`H_2(5)`$, let $`B`$ be the span of $`\{v_{i5}:1\le i\le4\}`$ and $`T=B^\bot`$. These are the $`S_4`$ branches of dimensions three and two. Put
 
 ```math
 W=|v_{12}\rangle\langle v_{12}|

@@ -82,7 +82,7 @@ The second branch is an explicit copy of $`H_{k-1}(N)`$:
 On degree-$`r`$ squarefree polynomials, $`D_NU_N-U_ND_N=(N-2r)I`$. With $`r=k-1`$ and $`D_Nh=0`$, this gives $`D_NU_Nh=a h`$ and makes $`\iota(h)`$ harmonic. Its two parts have disjoint monomial supports, and $`U_Nh`$ is orthogonal to $`H_k(N)`$. Hence
 
 ```math
-\|\iota(h)\|^2=a(a+1)\|h\|^2,
+\lVert \iota(h)\rVert ^2=a(a+1)\lVert h\rVert ^2,
 ```
 
 and these are precisely the two multiplicity-free $`S_N`$ branches.
@@ -133,9 +133,9 @@ This relation holds on every incidence edge $`R\subset A`$ between the $`(k-1)`$
 For these values, $`W`$ acts as $`c`$ on $`T`$. On $`B`$, its compression vanishes because
 
 ```math
-\|U_Nh\|^2=a\|h\|^2,
+\lVert U_Nh\rVert ^2=a\lVert h\rVert ^2,
 \qquad
-c\|U_Nh\|^2-\frac ca\|a x_nh\|^2=0.
+c\lVert U_Nh\rVert ^2-\frac ca\lVert a x_nh\rVert ^2=0.
 ```
 
 There are no cross terms, either by the two-branch invariance or by orthogonality to $`U_NH_{k-1}(N)`$. Hence $`W=cP_T`$. For the final claim, subtract $`bI_{H_k(n)}`$, which belongs to the frame span by its Parseval identity, and apply the proved statement. At $`k=1`$, use the empty polytabloids $`h=h'=1`$; the same proof applies. ∎
